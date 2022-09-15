@@ -1,13 +1,17 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import FibonacciCalculator from "../components/FibonacciCalculator";
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
         <title>EVE Section4</title>
-        <meta name="description" content="Section 4 in EVE React Evaluation. " />
+        <meta
+          name="description"
+          content="Section 4 in EVE React Evaluation. "
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -17,18 +21,16 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          This will evaluate your understanding of component props and react State hooks.
+          This will evaluate your understanding of component props and react
+          State hooks.
         </p>
 
         <div className={styles.grid}>
-
-          {/* Q4.1 Add the FibonacciCalculator Component here. */}
-
+          <FibonacciCalculator />
         </div>
       </main>
-
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
